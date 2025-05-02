@@ -1,0 +1,14 @@
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+#animateBox {
+    width: 100px;
+    height: 100px;
+    background: coral;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-top: 10px;
+  }
+
+  #animateBox.show {
+    opacity: 1;
+  }

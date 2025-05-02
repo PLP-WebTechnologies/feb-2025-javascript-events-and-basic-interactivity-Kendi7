@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="heading">Interactive elements</h1>
+    <!--  Event Handling  -->
+    <div id="container1">
+        <p id="message">Click the button</p>
+        <button id="btn">submit button</button><br><br>
+        <button id="doubleClick">DoubleClick</button><br><br>
+        <input type="text" id="inputBox" placeholder="Type something">
+    </div>
+    <br>
+    <!-- Interactive Elements -->
+    <div id="container2">
+        <button id="magicBtn">Click Me!</button>
+        <br><br>
+        <img id="galleryImg" src="images/image1.jpg" width="300">
+        <br><br>
+        <button onclick="changeImage()">Next Image</button><br><br>
+        <button onclick="showTab('tab1')">Tab 1</button><br><br>
+        <button onclick="showTab('tab2')">Tab 2</button><br><br>
+        <div id="tab1" class="tab-content active">This is Tab 1 content.</div>
+        <div id="tab2" class="tab-content">This is Tab 2 content.</div>
+        <!-- Annimation using Css -->
+        <button id="toggleBtn">Toggle Fade</button>
+        <div id="animateBox"></div>
+    </div>
+    <br>
+    <!--   Form Validation -->
+    <div id="container3">
+        <form action="" id="forms">
+            <label for="names">Name</label>
+            <input type="text" id="names" placeholder="write your name">
+            <br><br>
+            <label for="email">Email</label >
+            <input type="email" id="email">
+            <br><br>
+            <p id="emailAlert"></p>
+            <label for="password">password</label>
+            <input type="password" id="password" required>
+            <p id="passAlert"></p>
+
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
